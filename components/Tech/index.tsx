@@ -1,16 +1,15 @@
-import { motion } from "framer-motion";
-// import { BallCanvas } from './canvas';
-// import { SectionWrapper } from '../hoc';
-import { technologies } from "../../constants";
-// import { styles } from '../styles';
-import { textVariant } from "../../utils/motion";
-import SectionWrapper from "../SectionWrapper";
+import React from "react";
 
-import BallCanvas from "../BallCanvas";
+import { BallCanvas } from "../Canvas";
+
+import { technologies } from "@/constants";
+
+import { motion } from "framer-motion";
+import { textVariant } from "@/utils/motion";
 
 const Tech = () => {
   return (
-    <SectionWrapper idName="tech">
+    <>
       <motion.div variants={textVariant()}>
         <p
           className={
@@ -27,15 +26,14 @@ const Tech = () => {
           Technologies.
         </h2>
       </motion.div>
-
-      <div className="flex flex-wrap justify-center gap-10 mt-14">
-        {technologies.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
-            <BallCanvas icon={technology.icon} />
+      <div className="flex flex-row flex-wrap justify-center gap-10 mt-14">
+        {technologies.map((tech) => (
+          <div className="w-28 h-28" key={tech.name}>
+            <BallCanvas icon={tech.icon} />
           </div>
         ))}
       </div>
-    </SectionWrapper>
+    </>
   );
 };
 
