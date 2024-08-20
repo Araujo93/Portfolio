@@ -32,13 +32,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Poppins", sans-serif; */
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
 
 .paddingX {
   @apply sm:px-16 px-6;
+}
+.innerWidth {
+  @apply 2xl:max-w-[1280px] w-full;
+}
+.interWidth {
+  @apply lg:w-[80%] w-[100%];
 }
 
 .paddingY {
@@ -92,6 +98,14 @@
     #804dee 0%,
     rgba(60, 51, 80, 0) 100%
   );
+}
+
+.glassmorphism {
+  background: rgba(20, 20, 20, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(133, 133, 133, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .green-pink-gradient {

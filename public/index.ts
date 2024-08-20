@@ -10,6 +10,8 @@ import toronto from "./assets/backgrounds/toronto.jpeg";
 import logo from "./assets/personal/mobile-logo.png";
 import logotext from "./assets/personal/wordmark-logo.png";
 import sean from "./assets/personal/portfolio-img.png";
+import pokeworld from "./assets/personal/pokeball_wallpaper.png";
+import sortingsim from "./assets/personal/sorting-sim.png";
 
 // icons
 
@@ -17,6 +19,8 @@ import backend from "./assets/icons/backend.png";
 import frontend from "./assets/icons/frontend.png";
 import ux from "./assets/icons/ux.png";
 import prototype from "./assets/icons/prototyping.png";
+import pineapple from "./assets/icons/pineapple.png";
+import pineappleHover from "./assets/icons/pineappleHover.png";
 
 import github from "./assets/icons/github.png";
 
@@ -61,4 +65,8 @@ export {
   github,
   menu,
   close,
+  pokeworld,
+  sortingsim,
+  pineapple,
+  pineappleHover,
 };

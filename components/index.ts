@@ -5,4 +5,15 @@ import Contact from "./Contact";
 import Tech from "./Tech";
 import { ComputersCanvas } from "./Canvas";
 import Loader from "./Loader";
-export { Navbar, Hero, About, Tech, Contact, ComputersCanvas, Loader };
+import Projects from "./Projects";
+
+export {
+  Navbar,
+  Hero,
+  About,
+  Tech,
+  Contact,
+  ComputersCanvas,
+  Loader,
+  Projects,
+};
