@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Contact from "./Contact";
 import Tech from "./Tech";
-import { ComputersCanvas } from "./Canvas";
+import { ComputersCanvas, StarsCanvas } from "./Canvas";
 import Loader from "./Loader";
 import Projects from "./Projects";
 
@@ -14,6 +14,7 @@ export {
   Tech,
   Contact,
   ComputersCanvas,
+  StarsCanvas,
   Loader,
   Projects,
 };

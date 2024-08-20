@@ -109,6 +109,20 @@ const technologies = [
 const projects = [
   {
     id: "project-1",
+    name: "Sorting Simulator",
+    description: "A Sorting Simulator app built entirely on native JavaScript",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: sortingsim,
+    repo: "https://github.com/Araujo93/Sorting-Simulator",
+    // demo: "https://shaqdeff.github.io/Leaderboard/",
+  },
+  {
+    id: "project-2",
     name: "Poke World",
     description:
       "A Pokemon web app to display all your favourite pokemon and stats.",
@@ -129,20 +143,6 @@ const projects = [
     image: pokeworld,
     repo: "https://github.com/Araujo93/Pokemon",
     // demo: "https://shaqdeff.github.io/KomiKult/",
-  },
-  {
-    id: "project-2",
-    name: "Sorting Simulator",
-    description: "A Sorting Simulator app built entirely on native JavaScript",
-    tags: [
-      {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: sortingsim,
-    repo: "https://github.com/Araujo93/Sorting-Simulator",
-    // demo: "https://shaqdeff.github.io/Leaderboard/",
   },
 ];
 

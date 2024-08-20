@@ -8,7 +8,6 @@ import {
   Float,
   OrbitControls,
   Preload,
-  Texture,
   useTexture,
 } from "@react-three/drei";
 

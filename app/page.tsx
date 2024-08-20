@@ -1,27 +1,30 @@
 "use client";
 
-import { Navbar, Hero, About, Tech, Contact, Projects } from "@/components";
-import useSectionWrapper from "./hooks/useSectionWrapper";
+import {
+  Navbar,
+  Hero,
+  About,
+  Tech,
+  Contact,
+  Projects,
+  StarsCanvas,
+} from "@/components";
 
 export default function Home() {
-  const { Component: AboutSection } = useSectionWrapper("about", <About />);
-  const { Component: TechSection } = useSectionWrapper("", <Tech />);
-  const { Component: ProjectsSection } = useSectionWrapper("", <Projects />);
   return (
     <main className="relative z-0">
       <div className=" bg-cover bg-no-repeat bg-center">
         <Navbar />
         <Hero />
       </div>
-      {AboutSection}
+      <About />
       <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10 pt-20">
-        {TechSection}
+        <Tech />
       </div>
-      {ProjectsSection}
-
+      <Projects />
       <div className="relative z-0">
         <Contact />
-        {/* <StarCanvas /> */}
+        <StarsCanvas />
       </div>
     </main>
   );

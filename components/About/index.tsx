@@ -7,6 +7,8 @@ import { fadeIn, textVariant } from "@/utils/motion";
 
 import Image from "next/image";
 
+import SectionWrapper from "@/app/hoc/SectionWrapper";
+
 const ServiceCard = ({ index, title, icon }: any) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -59,4 +61,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, "about");

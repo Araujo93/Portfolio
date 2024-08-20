@@ -56,7 +56,7 @@ const Hero = () => {
           <Image
             className="absolute bottom-0 ml-[58vw]
       lg:ml-[80vw] md:ml-[72vw] xmd:ml-[66vw]
-      sm:h-[53vh] md:h-[63vh] xl:h-[73vh]"
+      sm:h-[53vh] md:h-[63vh] xl:h-[73vh] w-auto"
             src={sean}
             alt="sean"
           />

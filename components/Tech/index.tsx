@@ -6,6 +6,7 @@ import { technologies } from "@/constants";
 
 import { motion } from "framer-motion";
 import { textVariant } from "@/utils/motion";
+import SectionWrapper from "@/app/hoc/SectionWrapper";
 
 const Tech = () => {
   return (
@@ -37,4 +38,4 @@ const Tech = () => {
   );
 };
 
-export default Tech;
+export default SectionWrapper(Tech, "");

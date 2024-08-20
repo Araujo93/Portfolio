@@ -6,6 +6,8 @@ import { fadeIn, textVariant, staggerContainer } from "@/utils/motion";
 
 import Image from "next/image";
 
+import SectionWrapper from "@/app/hoc/SectionWrapper";
+
 const ProjectCard = ({
   id,
   name,
@@ -164,4 +166,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default SectionWrapper(Projects, "projects");
