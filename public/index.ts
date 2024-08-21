@@ -20,7 +20,6 @@ import frontend from "./assets/icons/frontend.png";
 import ux from "./assets/icons/ux.png";
 import prototype from "./assets/icons/prototyping.png";
 import pineapple from "./assets/icons/pineapple.png";
-import pineappleHover from "./assets/icons/pineappleHover.png";
 
 import github from "./assets/icons/github.png";
 
@@ -37,8 +36,6 @@ import redux from "./assets/tech/redux.png";
 import tailwind from "./assets/tech/tailwind.png";
 import typescript from "./assets/tech/typescript.png";
 import graphql from "./assets/tech/graphql.png";
-
-// scene
 
 export {
   logo,
@@ -68,5 +65,4 @@ export {
   pokeworld,
   sortingsim,
   pineapple,
-  pineappleHover,
 };

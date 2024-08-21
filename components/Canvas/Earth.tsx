@@ -1,8 +1,13 @@
 "use client";
 import React, { Suspense } from "react";
+
+// react-three/fiber
 import { Canvas } from "@react-three/fiber";
 
+// react-three/drei
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+
+// components
 import Loader from "../Loader";
 
 const Earth = () => {

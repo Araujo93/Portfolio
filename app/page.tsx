@@ -13,7 +13,7 @@ import {
 export default function Home() {
   return (
     <main className="relative z-0">
-      <div className=" bg-cover bg-no-repeat bg-center">
+      <div className="bg-cover bg-no-repeat bg-center">
         <Navbar />
         <Hero />
       </div>

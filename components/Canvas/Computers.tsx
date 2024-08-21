@@ -2,13 +2,21 @@
 
 import React, { Suspense, useEffect, useState } from "react";
 
+// Canvas
 import { Canvas } from "@react-three/fiber";
 
+// react-three/drei
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
+// components
 import Loader from "../Loader";
 
-const Computers = ({ isMobile }: any) => {
+// props
+type ComputersProps = {
+  isMobile: boolean;
+};
+
+const Computers = ({ isMobile }: ComputersProps) => {
   const modelPath = `./desktop_pc/scene.gltf`;
 
   const scene = useGLTF(modelPath);
@@ -29,7 +37,7 @@ const Computers = ({ isMobile }: any) => {
       <primitive
         object={scene.scene}
         scale={isMobile ? 0.5 : 0.6}
-        position={isMobile ? [0, -1.2, 0] : [0, -3.25, 0]}
+        position={isMobile ? [0, -1, -1] : [0, -3, -0.25]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -40,7 +48,7 @@ const ComputerCanvas = () => {
   const [mobile, setMobile] = useState<boolean>(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width:1025px)");
+    const mediaQuery = window.matchMedia("(max-width:640px)");
 
     setMobile(mediaQuery.matches);
 

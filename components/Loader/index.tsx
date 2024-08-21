@@ -2,6 +2,7 @@
 
 import React from "react";
 
+// react-three/drei
 import { Html, useProgress } from "@react-three/drei";
 
 const Loader = () => {

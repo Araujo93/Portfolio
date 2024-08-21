@@ -1,11 +1,18 @@
 import React from "react";
 
+// Canvas
 import { BallCanvas } from "../Canvas";
 
+// constants
 import { technologies } from "@/constants";
 
+// framer-motion
 import { motion } from "framer-motion";
+
+// utils
 import { textVariant } from "@/utils/motion";
+
+// sectionWrapper
 import SectionWrapper from "@/app/hoc/SectionWrapper";
 
 const Tech = () => {

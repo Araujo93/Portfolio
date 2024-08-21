@@ -1,4 +1,6 @@
 import React, { Dispatch } from "react";
+
+// constants
 import { navLinks } from "@/constants";
 
 type NavbarLinksProps = {

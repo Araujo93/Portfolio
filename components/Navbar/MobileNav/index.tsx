@@ -1,12 +1,27 @@
-import React from "react";
+import React, { Dispatch } from "react";
 
+// next
 import Image from "next/image";
 
+// assets
 import { menu, close } from "@/public";
 
+// constants
 import { navLinks } from "@/constants";
 
-const MobileNav = ({ toggle, setToggle, active, setActive }: any) => {
+type MobileNavProps = {
+  toggle: boolean;
+  setToggle: Dispatch<React.SetStateAction<boolean>>;
+  active: string;
+  setActive: Dispatch<React.SetStateAction<string>>;
+};
+
+const MobileNav = ({
+  toggle,
+  setToggle,
+  active,
+  setActive,
+}: MobileNavProps) => {
   return (
     <div className="sm:hidden flex flex-1 justify-end items-center">
       <Image

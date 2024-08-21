@@ -1,8 +1,14 @@
 "use client";
+
 import React, { Suspense } from "react";
 
+// next
+import { StaticImageData } from "next/image";
+
+// Canvas
 import { Canvas } from "@react-three/fiber";
 
+// react-three-drei
 import {
   Decal,
   Float,
@@ -11,10 +17,19 @@ import {
   useTexture,
 } from "@react-three/drei";
 
+// components
 import Loader from "../Loader/index";
 
-const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl.src]);
+type BallProps = {
+  imgUrl: StaticImageData;
+};
+
+type BallCanvasProps = {
+  icon: StaticImageData;
+};
+
+const Ball = ({ imgUrl }: BallProps) => {
+  const [decal] = useTexture([imgUrl.src]);
   return (
     <Float speed={2.5} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
@@ -37,11 +52,11 @@ const Ball = (props) => {
   );
 };
 
-const BallCanvas = ({ icon }) => {
+const BallCanvas = ({ icon }: BallCanvasProps) => {
   return (
     <Canvas frameloop="always">
       <Suspense fallback={<Loader />}>
-        <OrbitControls enableZoom={false} position0={0} />
+        <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
       </Suspense>
       <Preload all />

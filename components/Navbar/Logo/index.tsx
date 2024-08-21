@@ -1,8 +1,10 @@
 import React, { Dispatch } from "react";
 
+// next
 import Link from "next/link";
 import Image from "next/image";
 
+// assets
 import { logo, logotext } from "@/public";
 
 type LogoProps = {
@@ -30,6 +32,7 @@ const Logo = ({ setActive }: LogoProps) => {
         src={logotext}
         alt="logo"
         className="sm:w-[60px] sm:h-[60px] w-[65px] h-[65px] object-contain grayscale"
+        priority
       />
     </Link>
   );

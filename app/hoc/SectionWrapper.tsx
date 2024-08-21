@@ -1,7 +1,10 @@
+// framer-motion
 import { motion } from "framer-motion";
+
+// staggerContainer
 import { staggerContainer } from "@/utils/motion";
 
-const SectionWrapper = (Component, idName) => {
+const SectionWrapper = (Component: React.ElementType, idName: string) => {
   function HOC() {
     return (
       <motion.section

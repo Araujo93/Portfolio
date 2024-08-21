@@ -119,7 +119,7 @@ const projects = [
     ],
     image: sortingsim,
     repo: "https://github.com/Araujo93/Sorting-Simulator",
-    // demo: "https://shaqdeff.github.io/Leaderboard/",
+    demo: "https://shaqdeff.github.io/Leaderboard/",
   },
   {
     id: "project-2",
@@ -142,7 +142,7 @@ const projects = [
     ],
     image: pokeworld,
     repo: "https://github.com/Araujo93/Pokemon",
-    // demo: "https://shaqdeff.github.io/KomiKult/",
+    demo: "https://shaqdeff.github.io/KomiKult/",
   },
 ];
 
