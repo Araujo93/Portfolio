@@ -162,7 +162,7 @@ const projects = [
     ],
     image: pokeworld,
     repo: "https://github.com/Araujo93/Pokemon",
-    demo: "https://shaqdeff.github.io/KomiKult/",
+    // demo: "",
   },
 ];
 
