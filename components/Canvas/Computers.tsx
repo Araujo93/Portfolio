@@ -48,7 +48,7 @@ const ComputerCanvas = () => {
   const [mobile, setMobile] = useState<boolean>(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width:640px)");
+    const mediaQuery = window.matchMedia("(max-width:650px)");
 
     setMobile(mediaQuery.matches);
 
@@ -64,22 +64,28 @@ const ComputerCanvas = () => {
   }, []);
 
   return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<Loader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={mobile} />
-      </Suspense>
-      <Preload all />
-    </Canvas>
+    <>
+      {mobile ? (
+        <></>
+      ) : (
+        <Canvas
+          frameloop="demand"
+          shadows
+          camera={{ position: [20, 3, 5], fov: 25 }}
+          gl={{ preserveDrawingBuffer: true }}
+        >
+          <Suspense fallback={<Loader />}>
+            <OrbitControls
+              enableZoom={false}
+              maxPolarAngle={Math.PI / 2}
+              minPolarAngle={Math.PI / 2}
+            />
+            <Computers isMobile={mobile} />
+          </Suspense>
+          <Preload all />
+        </Canvas>
+      )}
+    </>
   );
 };
 

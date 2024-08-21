@@ -17,6 +17,7 @@ import {
   docker,
   pokeworld,
   sortingsim,
+  dreamscape,
 } from "../public";
 
 const navLinks = [
@@ -119,10 +120,29 @@ const projects = [
     ],
     image: sortingsim,
     repo: "https://github.com/Araujo93/Sorting-Simulator",
-    demo: "https://shaqdeff.github.io/Leaderboard/",
+    demo: "https://sorting-simulator.vercel.app/",
   },
   {
     id: "project-2",
+    name: "Dreamscape AI",
+    description:
+      "A web app to create imaginative and visually stunning images through DALL-E AI.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: dreamscape,
+    repo: "https://github.com/Araujo93/DreamScapeAI",
+    demo: "https://dream-scape-ai.vercel.app/",
+  },
+  {
+    id: "project-3",
     name: "Poke World",
     description:
       "A Pokemon web app to display all your favourite pokemon and stats.",

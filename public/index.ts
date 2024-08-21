@@ -12,6 +12,7 @@ import logotext from "./assets/personal/wordmark-logo.png";
 import sean from "./assets/personal/portfolio-img.png";
 import pokeworld from "./assets/personal/pokeball_wallpaper.png";
 import sortingsim from "./assets/personal/sorting-sim.png";
+import dreamscape from "./assets/personal/dreamscape.png";
 
 // icons
 
@@ -65,4 +66,5 @@ export {
   pokeworld,
   sortingsim,
   pineapple,
+  dreamscape,
 };

@@ -39,8 +39,9 @@ const Hero = () => {
             priority
           />
         </div>
-
+        {/* <div className="flex flex-[0.6]"> */}
         <ComputersCanvas />
+        {/* </div> */}
 
         {/* Motion Scroll Div */}
         <MotionScroll />
