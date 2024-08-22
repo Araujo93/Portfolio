@@ -9,7 +9,7 @@ const HeroCTA = () => {
       </div>
 
       <div className="">
-        <h1 className="heroHeadText whitespace-nowrap">
+        <h1 className="heroHeadText">
           Hi, I'm{" "}
           <span
             className="text-battleGray sm:text-[90px]

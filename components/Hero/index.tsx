@@ -7,9 +7,6 @@ import Image from "next/image";
 // assets
 import { waves, sean } from "@/public";
 
-// Canvas
-import { ComputersCanvas } from "../Canvas";
-
 // components
 import HeroCTA from "./HeroCTA";
 import MotionScroll from "./MotionScroll";
@@ -31,17 +28,14 @@ const Hero = () => {
         {/* Profile Image */}
         <div>
           <Image
-            className="absolute bottom-0 ml-[58vw]
-      lg:ml-[80vw] md:ml-[72vw] xmd:ml-[66vw]
-      sm:h-[53vh] md:h-[63vh] xl:h-[73vh] w-auto"
+            className="absolute bottom-0 ml-[50vw] 
+            lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
+            sm:h-[55vh] md:h-[60vh] xl:h-[73vh]"
             src={sean}
             alt="sean"
             priority
           />
         </div>
-        {/* <div className="flex flex-[0.6]"> */}
-        <ComputersCanvas />
-        {/* </div> */}
 
         {/* Motion Scroll Div */}
         <MotionScroll />

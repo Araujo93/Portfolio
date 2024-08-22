@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 // Canvas
 import { BallCanvas } from "../Canvas";
@@ -14,8 +14,40 @@ import { textVariant } from "@/utils/motion";
 
 // sectionWrapper
 import SectionWrapper from "@/app/hoc/SectionWrapper";
+import { StaticImageData } from "next/image";
+
+type technologies = {
+  name: string;
+  icon: StaticImageData;
+}[];
 
 const Tech = () => {
+  const [mobile, setMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width:650px)");
+
+    setMobile(mediaQuery.matches);
+
+    const handleMediaQueryChange = (event: MediaQueryListEvent) => {
+      setMobile(event.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
+  const tech: technologies = useMemo(() => {
+    if (mobile) {
+      return technologies.slice(0, 6);
+    } else {
+      return technologies;
+    }
+  }, [mobile]);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -35,11 +67,12 @@ const Tech = () => {
         </h2>
       </motion.div>
       <div className="flex flex-row flex-wrap justify-center gap-10 mt-14">
-        {technologies.map((tech) => (
-          <div className="w-28 h-28" key={tech.name}>
-            <BallCanvas icon={tech.icon} />
-          </div>
-        ))}
+        {tech.length > 0 &&
+          tech.map((tech) => (
+            <div className="w-28 h-28" key={tech.name}>
+              <BallCanvas icon={tech.icon} />
+            </div>
+          ))}
       </div>
     </>
   );
