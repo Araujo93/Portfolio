@@ -58,6 +58,7 @@ const Projects = () => {
               index={index}
               active={active}
               handleClick={setActive}
+              tags={project.tags}
             />
           ))}
         </div>

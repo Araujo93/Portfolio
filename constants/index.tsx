@@ -117,6 +117,10 @@ const projects = [
         name: "JavaScript",
         color: "blue-text-gradient",
       },
+      {
+        name: "css",
+        color: "orange-text-gradient",
+      },
     ],
     image: sortingsim,
     repo: "https://github.com/Araujo93/Sorting-Simulator",
@@ -135,6 +139,10 @@ const projects = [
       {
         name: "tailwind",
         color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "orange-text-gradient",
       },
     ],
     image: dreamscape,
@@ -155,14 +163,14 @@ const projects = [
         name: "NextJs",
         color: "green-text-gradient",
       },
-      // {
-      //   name: "tailwind",
-      //   color: "pink-text-gradient",
-      // },
+      {
+        name: "css",
+        color: "orange-text-gradient",
+      },
     ],
     image: pokeworld,
     repo: "https://github.com/Araujo93/Pokemon",
-    // demo: "",
+    demo: "https://pokemon-pearl-two.vercel.app/",
   },
 ];
 

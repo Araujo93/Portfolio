@@ -23,6 +23,7 @@ type ProjectCardProps = {
   index: number;
   active: string;
   handleClick: Dispatch<SetStateAction<string>>;
+  tags: any;
 };
 
 const ProjectCard = ({
@@ -35,6 +36,7 @@ const ProjectCard = ({
   index,
   active,
   handleClick,
+  tags,
 }: ProjectCardProps) => {
   return (
     <motion.div
@@ -122,6 +124,17 @@ const ProjectCard = ({
                 LIVE DEMO
               </button>
             )}
+            <div className="z-20 absolute bottom-5 right-10">
+              {tags.map((tag: { name: string; color: string }) => (
+                <p
+                  className={tag.color}
+                  style={{ color: tag.color, backgroundColor: tag.color }}
+                  key={tag.name}
+                >
+                  {tag.name}
+                </p>
+              ))}
+            </div>
           </div>
         </>
       )}
