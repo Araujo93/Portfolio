@@ -54,7 +54,7 @@ const Ball = ({ imgUrl }: BallProps) => {
 
 const BallCanvas = ({ icon }: BallCanvasProps) => {
   return (
-    <Canvas frameloop="always">
+    <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<Loader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
